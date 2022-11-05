@@ -1,0 +1,29 @@
+.cover__list {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cover__list:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .cover__list:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .cover__list:not(:first-of-type) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover__list {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
